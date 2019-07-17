@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>ZDMT下载</title>
+    <style type="text/css">
+    	#div1{
+    		margin-top: 100px;
+    		height: 120px;
+    		background: white;
+    		text-align: center;
+    	}
+
+        img{
+           margin-top: 10px; 	 
+        }
+
+        #div11{
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #333333;
+            font: "微软雅黑";
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        #div2{
+        	margin-left: 10px;
+        	margin-right: 10px;
+        	color: #333333;
+        	font: "微软雅黑";
+            text-align: left;
+            margin-top: 10px;
+        }
+        
+        #div3{
+        		margin-left: 10px;
+        		margin-right: 10px;
+        		margin-top: 10px;
+        		text-align: center;
+        	}
+        #div4{
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        a{
+        	color: blue;
+        	text-align: center;
+        	margin-top: 20px;
+        }
+        #btn_zdmt{
+        	text-align: center;
+            font-size: 14px;
+            color: white;
+            background: #3F51B5;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            border-color: #3F51B5;
+            width: 170px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #btn_zdmt_zcb{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            background: #3F51B5;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            border-color: #3F51B5;
+            width: 170px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+   
+    </style>
+    <script>
+    	function downloadZdmt(){
+    		self.location.href = "itms-services:///?action=download-manifest&url=https://blocknew.net/app_apk/zdmt_download_res/zdmt/manifest.plist";
+    	}
+        function downloadZdmtZCB(){
+            self.location.href = "itms-services:///?action=download-manifest&url=https://blocknew.net/app_apk/zdmt_download_res/zdmt_zcb/manifest.plist";
+        }
+    </script>
+    <!--itms-services://?action=download-manifest&url=
+			https://raw.githubusercontent.com/用户名/仓库名/master/manifest.plist-->
+</head>
+<body>
+	<!--长按二维码下载    -->
+	<div id="div1">
+		<img src="https://raw.githubusercontent.com/blocknew-distribute/blocknew-distribute.github.io/master/appicon.png" width="80" height="80"/>
+	</div>
+	
+	<div id="div3">
+		<button id="btn_zdmt" onclick="downloadZdmt()">&nbsp;&nbsp;下载ZDMT&nbsp;&nbsp;</button>
+	</div>
+
+    <div id="div4">
+        <button id="btn_zdmt_zcb" onclick="downloadZdmtZCB()">下载ZDMT众筹版</button>
+    </div>
+	
+	<div id="div11">
+		温馨提示：请按照以下两个步骤操作
+	</div>
+
+    <div id="div2">
+        步骤1：点击立即下载即可下载。
+    </div>
+    <div id="div2">
+        步骤2：点击手机的设置->通用->描述文件与设备管理，选择信任ZDMT。然后打开app，即可使用
+    </div>
+	
+
+</body>
+</html>
